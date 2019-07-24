@@ -1,11 +1,12 @@
 <style lang="scss">
+@import '../assets/css/animations.scss';
 @import '../assets/css/presentation.scss';
 </style>
 
 <template>
 <div id="header" class="row">
   <div class="offset-md-3 col-md-6">
-    <img src="../assets/header.png"/>
+    <img class="" src="../assets/header.png"/>
   </div>
 </div>
 </template>

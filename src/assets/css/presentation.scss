@@ -4,6 +4,9 @@
     padding-left:2rem;
     padding-right:2rem;
     img {
+        opacity: 0;
+        animation: neonAppearAnimate 2s linear 1;
+        animation-fill-mode: forwards;
         width:100%;
     }
 }
