@@ -3,7 +3,7 @@
 </style>
 
 <template>
-  <div>
+  <div class="container-fluid">
     <Presentation/>
     <div id="skill-categories">
       <div class="row">
