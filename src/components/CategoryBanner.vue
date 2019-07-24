@@ -17,7 +17,7 @@ export default class CategoryBanner extends Vue {
   @Prop()
   public bannerImgPath!: string;
 
-  public static lastDelay: number = 0.5;
+  public static lastDelay: number = 1;
 
   constructor() {
     super();
