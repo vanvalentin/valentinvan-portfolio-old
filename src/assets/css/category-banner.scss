@@ -4,5 +4,14 @@
 }
 
 .banner-img{
+    opacity: 0;
+    animation: neonAppearAnimate 2s linear 1;
+    animation-fill-mode: forwards;
     width:100%;
+}
+
+.banner-img:hover {
+    animation: neonAppearAnimate 2s linear 1, neonAnimate .1s linear infinite;
+    animation-delay: 0 !important;
+    cursor: pointer;
 }

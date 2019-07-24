@@ -5,35 +5,37 @@
 <template>
   <div>
     <Presentation/>
-    <div class="row">
-      <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
-        <CategoryBanner
-          :bannerImgPath="getCodingBannerUrl()"
-        />
+    <div id="skill-categories">
+      <div class="row">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
+          <CategoryBanner
+            :bannerImgPath="getCodingBannerUrl()"
+          />
+        </div>
+        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
+          <CategoryBanner
+            :bannerImgPath="getGameBannerUrl()"
+          />
+        </div>
       </div>
-      <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
-        <CategoryBanner
-          :bannerImgPath="getGameBannerUrl()"
-        />
+      <div class="row">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
+          <CategoryBanner
+            :bannerImgPath="getWebBannerUrl()"
+          />
+        </div>
+        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
+          <CategoryBanner
+            :bannerImgPath="getSqlBannerUrl()"
+          />
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
-        <CategoryBanner
-          :bannerImgPath="getWebBannerUrl()"
-        />
-      </div>
-      <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
-        <CategoryBanner
-          :bannerImgPath="getSqlBannerUrl()"
-        />
-      </div>
-    </div>
-    <div class="row">
-      <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
-        <CategoryBanner
-          :bannerImgPath="getGraphicBannerUrl()"
-        />
+      <div class="row">
+        <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+          <CategoryBanner
+            :bannerImgPath="getGraphicBannerUrl()"
+          />
+        </div>
       </div>
     </div>
   </div>
