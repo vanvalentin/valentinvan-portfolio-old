@@ -10,40 +10,40 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class CategoryBanner extends Vue {
-  @Prop()
-  public bannerImgPath!: string;
 
   public static lastDelay: number = 1;
+  @Prop()
+  public bannerImgPath!: string;
 
   constructor() {
     super();
   }
 
-  mounted(){
-    CategoryBanner.lastDelay = genRand(CategoryBanner.lastDelay, CategoryBanner.lastDelay+1, 2);
+  public mounted() {
+    CategoryBanner.lastDelay = genRand(CategoryBanner.lastDelay, CategoryBanner.lastDelay + 1, 2);
     (this.$refs.BannerImg as HTMLImageElement).style.animationDelay = CategoryBanner.lastDelay + "s";
 
-    setTimeout( () => {  this.removeAnimDelay();}, CategoryBanner.lastDelay*1000+1000 );
+    setTimeout( () => {  this.removeAnimDelay(); }, CategoryBanner.lastDelay * 1000 + 1000 );
   }
 
-  private removeAnimDelay(){
-    (this.$refs.BannerImg as HTMLImageElement).style.removeProperty('animation-delay');
+  public onCategoryClick() {
+    this.$emit("onClick");
   }
 
-  public onCategoryClick(){
-    this.$emit('onClick');
+  private removeAnimDelay() {
+    (this.$refs.BannerImg as HTMLImageElement).style.removeProperty("animation-delay");
   }
 
 }
 
-function genRand(min: number, max: number, decimalPlaces: number) {  
-    var rand = Math.random()*(max-min) + min;
-    var power = Math.pow(10, decimalPlaces);
-    return Math.floor(rand*power) / power;
+function genRand(min: number, max: number, decimalPlaces: number) {
+    let rand = Math.random() * (max - min) + min;
+    let power = Math.pow(10, decimalPlaces);
+    return Math.floor(rand * power) / power;
 }
 </script>
 

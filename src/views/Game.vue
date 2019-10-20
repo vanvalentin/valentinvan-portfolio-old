@@ -9,7 +9,7 @@
   <div class="container-fluid">
     <div id="skill-title" class="row">
       <div class="offset-md-3 col-md-6">
-        <img ref="" class="" src="../assets/web_title_skill_page.png"/>
+        <img ref="" class="" src="../assets/game_title_skill_page.png"/>
       </div>
     </div>
     <div class="projects">
@@ -53,7 +53,7 @@ import SkillProject from "@/components/SkillProject.vue";
     SkillProject,
   },
 })
-export default class Web extends Vue {
+export default class Game extends Vue {
 
   private getPortfolioImg(): string {
     return require("../assets/img/web/illu_portfolio.png");
