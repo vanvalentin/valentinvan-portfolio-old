@@ -15,10 +15,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class SkillProject extends Vue {
+
+  public static lastDelay: number = 1;
   @Prop()
   public imgPath!: string;
 
@@ -28,15 +30,12 @@ export default class SkillProject extends Vue {
   @Prop()
   public text!: string;
 
-  public static lastDelay: number = 1;
-
   constructor() {
     super();
   }
 
-  mounted(){
+  public mounted() {
   }
 }
-
 </script>
 

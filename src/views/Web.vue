@@ -50,7 +50,7 @@ import SkillProject from "@/components/SkillProject.vue";
 @Component({
   components: {
     Navbar,
-    SkillProject
+    SkillProject,
   },
 })
 export default class Web extends Vue {
@@ -62,7 +62,7 @@ export default class Web extends Vue {
   private getWebCompImg(): string {
     return require("../assets/img/web/illu_web_components.png");
   }
-  
+
   private getToecImg(): string {
     return require("../assets/img/web/illu_toec.png");
   }

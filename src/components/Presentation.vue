@@ -12,15 +12,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Presentation extends Vue {
   private PresentationImg?: HTMLImageElement;
 
   public turnOff() {
-    if(this.PresentationImg){
-      this.PresentationImg.classList.add('turn-off-presentation');
+    if (this.PresentationImg) {
+      this.PresentationImg.classList.add("turn-off-presentation");
     }
   }
 }
