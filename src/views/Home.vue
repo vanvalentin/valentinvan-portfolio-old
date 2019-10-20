@@ -4,37 +4,48 @@
 
 <template>
   <div class="container-fluid">
-    <Presentation/>
+    <Presentation
+      ref="Presentation"/>
     <div id="skill-categories">
       <div class="row">
         <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
-          <CategoryBanner
-            :bannerImgPath="getCodingBannerUrl()"
-          />
+          <router-link to="/coding">
+            <CategoryBanner
+              :bannerImgPath="getCodingBannerUrl()"
+            />
+          </router-link>
         </div>
         <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
-          <CategoryBanner
-            :bannerImgPath="getGameBannerUrl()"
-          />
+          <router-link to="/game">
+            <CategoryBanner
+              :bannerImgPath="getGameBannerUrl()"
+            />
+          </router-link>
         </div>
       </div>
       <div class="row">
         <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
-          <CategoryBanner
-            :bannerImgPath="getWebBannerUrl()"
-          />
+          <router-link to="/web">
+            <CategoryBanner
+              :bannerImgPath="getWebBannerUrl()"
+            />
+          </router-link>
         </div>
         <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
-          <CategoryBanner
-            :bannerImgPath="getSqlBannerUrl()"
-          />
+          <router-link to="/sql">
+            <CategoryBanner
+              :bannerImgPath="getSqlBannerUrl()"
+            />
+          </router-link>
         </div>
       </div>
       <div class="row">
         <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
-          <CategoryBanner
-            :bannerImgPath="getGraphicBannerUrl()"
-          />
+          <router-link to="/graphic">
+            <CategoryBanner
+              :bannerImgPath="getGraphicBannerUrl()"
+            />
+          </router-link>
         </div>
       </div>
     </div>
@@ -42,9 +53,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Presentation from '@/components/Presentation.vue';
-import CategoryBanner from '@/components/CategoryBanner.vue';
+import { Component, Vue } from "vue-property-decorator";
+import Presentation from "@/components/Presentation.vue";
+import CategoryBanner from "@/components/CategoryBanner.vue";
 
 @Component({
   components: {
@@ -53,23 +64,30 @@ import CategoryBanner from '@/components/CategoryBanner.vue';
   },
 })
 export default class Home extends Vue {
-  private getCodingBannerUrl(): string{
+
+  private turnOffAll() {
+    if (this.$refs.Presentation) {
+      // this.$refs.Presentation.turnOff();
+    }
+  }
+
+  private getCodingBannerUrl(): string {
     return require("../assets/skill_category_coding.png");
   }
-  
-  private getGameBannerUrl(): string{
+
+  private getGameBannerUrl(): string {
     return require("../assets/skill_category_game.png");
   }
 
-  private getWebBannerUrl(): string{
+  private getWebBannerUrl(): string {
     return require("../assets/skill_category_web.png");
   }
-  
-  private getSqlBannerUrl(): string{
+
+  private getSqlBannerUrl(): string {
     return require("../assets/skill_category_sql.png");
   }
 
-  private getGraphicBannerUrl(): string{
+  private getGraphicBannerUrl(): string {
     return require("../assets/skill_category_graphic.png");
   }
 }

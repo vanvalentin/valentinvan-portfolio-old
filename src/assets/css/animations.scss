@@ -47,3 +47,12 @@
     50% { opacity: 1; }
     100% { opacity: 1; }
 }
+
+@keyframes neonTurnOff{
+    0% { opacity: 1; }
+    30% { opacity: .75; }
+    40% { opacity: .85; }
+    45% { opacity: .75; }
+    50% { opacity: .85; }
+    100% { opacity: 0; }
+}
