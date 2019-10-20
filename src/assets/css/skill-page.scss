@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'gil';
+    src: url('../assets/fonts/GIL.TTF');
+}
+
 body{
     margin:0 0;
     background-image: url('../assets/background_skill.png');
@@ -20,5 +25,28 @@ body{
         animation: neonAppearAnimate 2s linear 1;
         animation-fill-mode: forwards;
         width:100%;
+    }
+}
+
+.illu-img {
+    width:100%;
+}
+
+.description-title {
+    color:white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "gil", "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.description-text {
+    color:white;
+    text-align: left;
+    font-family: "gil", "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.projects {
+    .project {
+        margin-bottom: 50px;
     }
 }
