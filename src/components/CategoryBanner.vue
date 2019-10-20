@@ -5,7 +5,7 @@
 
 <template>
 <div class="banner-container">
-  <img ref="BannerImg" class="banner-img" :src="bannerImgPath"/>
+  <img ref="BannerImg" class="banner-img" :src="bannerImgPath" v-on:click="onCategoryClick()"/>
 </div>
 </template>
 
@@ -27,14 +27,17 @@ export default class CategoryBanner extends Vue {
     CategoryBanner.lastDelay = genRand(CategoryBanner.lastDelay, CategoryBanner.lastDelay+1, 2);
     (this.$refs.BannerImg as HTMLImageElement).style.animationDelay = CategoryBanner.lastDelay + "s";
 
-    console.log("before")
-    setTimeout( () => {  this.removeAnimDelay(); console.log("after");}, CategoryBanner.lastDelay*1000+1000 );
-  
+    setTimeout( () => {  this.removeAnimDelay();}, CategoryBanner.lastDelay*1000+1000 );
   }
 
-  removeAnimDelay(){
-    (this.$refs.BannerImg as HTMLImageElement).style.removeProperty("animation-delay");
+  private removeAnimDelay(){
+    (this.$refs.BannerImg as HTMLImageElement).style.removeProperty('animation-delay');
   }
+
+  public onCategoryClick(){
+    this.$emit('onClick');
+  }
+
 }
 
 function genRand(min: number, max: number, decimalPlaces: number) {  

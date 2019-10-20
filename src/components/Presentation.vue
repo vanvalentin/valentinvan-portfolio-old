@@ -6,7 +6,7 @@
 <template>
 <div id="header" class="row">
   <div class="offset-md-3 col-md-6">
-    <img class="" src="../assets/header.png"/>
+    <img ref="" class="" src="../assets/header.png"/>
   </div>
 </div>
 </template>
@@ -16,5 +16,12 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Presentation extends Vue {
+  private PresentationImg?: HTMLImageElement;
+
+  public turnOff() {
+    if(this.PresentationImg){
+      this.PresentationImg.classList.add('turn-off-presentation');
+    }
+  }
 }
 </script>

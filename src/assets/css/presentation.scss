@@ -10,3 +10,8 @@
         width:100%;
     }
 }
+
+.turn-off-presentation {
+    animation: neonTurnOff 1.5s linear 1;
+    animation-fill-mode: forwards;
+}
