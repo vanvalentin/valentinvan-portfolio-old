@@ -15,27 +15,12 @@
     <div class="projects">
       <SkillProject 
         class="project"
-        :imgPath="getPortfolioImg()"
-        title="Portfolio"
-        text="From design to coding, I made my own portfolio while I spent a year working in Hong Kong.  It is a mix of the famous Hong Kong street neons, with a bit of old school video game and asian traditional culture. 
+        :imgPath="getGraphicsImg()"
+        title="A little story..."
+        text="Even though my studies revolve mostly around computer programming, I always had an interest in graphic design. Since my years in highschool I loved messing around photos, drawings in different graphics editor. I would build birthday cards, make some graphics for my guild in some online games, live streaming myself drawing on my tablet to 4 people...<br/><br/>
+I have now left my 4 viewers and focused on coding due to my field of study. But in every job and project I have worked in, I would always add my touch with some graphic design of my own. This is something I hold dearly in anything I make, I will always try to think about user interfaces and experience. Therefore, I am still trying to find some time to experience more new things related to graphics. I have taken a liking in photography at the moment, and would also like to experience more of 3D modeling and VFX.
         <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, VueJs, Typescript, Photoshop"
-        />
-      <SkillProject 
-        class="project"
-        :imgPath="getWebCompImg()"
-        title="Web components"
-        text="During one year I have worked as a Full Stack Developer at Société Générale Hong Kong, the centre of operations for Asia Pacific region of one of the main french banks. I was building web components used by finance team to automate and show analytics on various type of reports.
-        <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, React, Typescript/Javascript, Bootstrap, Highcharts, Ag-Grid, .NET"
-        />
-      <SkillProject 
-        class="project"
-        :imgPath="getToecImg()"
-        title="Les Dauphins du TOEC"
-        text="During my bachelor I have done an internship as a Web Developper. This was my first working experience in web, I learnt to perfect my Javascript and discover the very first releases of Bootstrap. I built the swimming club &quot;Les Dauphins du TOEC&quot; website aswell as a special event website for them.é
-        <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, Javascript, JQuery, Bootstrap, PHP, Photoshop"
+        <b>Worked with:</b> Photoshop, Lightroom, Premiere, 3DSMax"
         />
     </div>
   </div>
@@ -55,16 +40,8 @@ import SkillProject from "@/components/SkillProject.vue";
 })
 export default class Graphic extends Vue {
 
-  private getPortfolioImg(): string {
+  private getGraphicsImg(): string {
     return require("../assets/img/web/illu_portfolio.png");
-  }
-
-  private getWebCompImg(): string {
-    return require("../assets/img/web/illu_web_components.png");
-  }
-
-  private getToecImg(): string {
-    return require("../assets/img/web/illu_toec.png");
   }
 }
 </script>
