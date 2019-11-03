@@ -33,7 +33,7 @@
         class="project"
         :imgPath="getToecImg()"
         title="Les Dauphins du TOEC"
-        text="During my bachelor I have done an internship as a Web Developper. This was my first working experience in web, I learnt to perfect my Javascript and discover the very first releases of Bootstrap. I built the swimming club &quot;Les Dauphins du TOEC&quot; website aswell as a special event website for them.é
+        text="During my bachelor I have done an internship as a Web Developper. This was my first working experience in web, I learnt to perfect my Javascript and discover the very first releases of Bootstrap. I built the swimming club &quot;Les Dauphins du TOEC&quot; website aswell as a special event website for them.
         <br/><br/>
         <b>Made with:</b> HTML5, CSS3, Javascript, JQuery, Bootstrap, PHP, Photoshop"
         />

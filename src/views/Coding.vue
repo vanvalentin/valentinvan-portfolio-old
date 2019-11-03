@@ -64,7 +64,7 @@ export default class Coding extends Vue {
   }
 
   private getBluetoothRemoteImg(): string {
-    return require("../assets/img/web/illu_toec.png");
+    return require("../assets/img/web/illu_portfolio.png");
   }
 }
 </script>
