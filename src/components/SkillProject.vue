@@ -4,10 +4,10 @@
 
 <template>
 <div class="row">
-  <div class="offset-md-2 col-md-4">
+  <div class="offset-1 col-10 offset-md-2 col-md-4 offset-xl-3 col-xl-3">
     <img ref="IlluImg" class="illu-img" :src="imgPath"/>
   </div>
-  <div class="col-md-5">
+  <div class="offset-1 col-10 offset-md-0 col-md-5 offset-xl-0 col-xl-3">
     <h1 class="description-title">{{title}}</h1>
     <p class="description-text" v-html="text"></p>
   </div>

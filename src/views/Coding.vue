@@ -15,27 +15,27 @@
     <div class="projects">
       <SkillProject 
         class="project"
-        :imgPath="getPortfolioImg()"
-        title="Portfolio"
-        text="From design to coding, I made my own portfolio while I spent a year working in Hong Kong.  It is a mix of the famous Hong Kong street neons, with a bit of old school video game and asian traditional culture. 
+        :imgPath="getRestApiImg()"
+        title="REST API"
+        text="During one year I have worked as a Full Stack Developer at Société Générale Hong Kong, the centre of operations for Asia Pacific region of one of the main french banks. Aside from building front-end web components used by finance team, I was also building API retrieving data and automating different type of calculation. 
         <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, VueJs, Typescript, Photoshop"
+        <b>Made with:</b> .NET Core"
         />
       <SkillProject 
         class="project"
-        :imgPath="getWebCompImg()"
-        title="Web components"
-        text="During one year I have worked as a Full Stack Developer at Société Générale Hong Kong, the centre of operations for Asia Pacific region of one of the main french banks. I was building web components used by finance team to automate and show analytics on various type of reports.
+        :imgPath="getFaceswapImg()"
+        title="Faceswap"
+        text="A project of a couple of months during my exchange study in Czech Replublic. I was commitionned to create a piece of software that would morph two faces into one. It was a pretty challenging and intersting project where I learned about Python, machine learning and visual computing.
         <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, React, Typescript/Javascript, Bootstrap, Highcharts, Ag-Grid, .NET"
+        <b>Made with:</b> Python"
         />
       <SkillProject 
         class="project"
-        :imgPath="getToecImg()"
-        title="Les Dauphins du TOEC"
-        text="During my bachelor I have done an internship as a Web Developper. This was my first working experience in web, I learnt to perfect my Javascript and discover the very first releases of Bootstrap. I built the swimming club &quot;Les Dauphins du TOEC&quot; website aswell as a special event website for them.é
+        :imgPath="getBluetoothRemoteImg()"
+        title="Bluetooth remote App"
+        text="As an apprentice in Nexter Training, a virtual reality training provider, I create an Android App. This app purpose is to allow a presenter of a Virtual Reality presentation to control the environement and timing of the presentation that is shown to a potential client. The app communicates through bluetooth to the VR module ran on a computer and created through Unity.
         <br/><br/>
-        <b>Made with:</b> HTML5, CSS3, Javascript, JQuery, Bootstrap, PHP, Photoshop"
+        <b>Made with:</b> Java, Android Studio, Unity3D"
         />
     </div>
   </div>
@@ -55,15 +55,15 @@ import SkillProject from "@/components/SkillProject.vue";
 })
 export default class Coding extends Vue {
 
-  private getPortfolioImg(): string {
-    return require("../assets/img/web/illu_portfolio.png");
+  private getRestApiImg(): string {
+    return require("../assets/img/coding/illu_sg_rest.png");
   }
 
-  private getWebCompImg(): string {
-    return require("../assets/img/web/illu_web_components.png");
+  private getFaceswapImg(): string {
+    return require("../assets/img/coding/illu_faceswap.png");
   }
 
-  private getToecImg(): string {
+  private getBluetoothRemoteImg(): string {
     return require("../assets/img/web/illu_toec.png");
   }
 }
