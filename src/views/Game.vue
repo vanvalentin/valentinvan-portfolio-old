@@ -17,25 +17,25 @@
         class="project"
         :imgPath="getVrArTrainingImg()"
         title="VR/AR Training"
-        text="During my apprenticeship of 3 years at Nexter Training, I have helped built virtual and augmented reality training for various fields. I first started my experience helping build and maintain their scenario tool. The tool was an add-on to the game engine Unity3D. It will help people with no coding skills build various type of scenario for their trainings and link them to 3D elements in Unity.<br/><br/>
-With the release of the VR headset HTC Vive during my first year I helped build their first VR training with the headset. We would then continue on to build many other training modules, using wireless headsets, vocal recognition and even VR gloves... It was obviously an experience where I learned a great amount of new skill. But it also helped me to know what computing technologies I was intersted in, and that would be video game development. 
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>During my apprenticeship of 3 years at Nexter Training, I have helped built virtual and augmented reality training for various fields. I first started my experience helping build and maintain their scenario tool. The tool was an add-on to the game engine Unity3D. It will help people with no coding skills build various type of scenario for their trainings and link them to 3D elements in Unity.</div><br/>
+<div class=&quot;indented-p&quot;>With the release of the VR headset HTC Vive during my first year I helped build their first VR training with the headset. We would then continue on to build many other training modules, using wireless headsets, vocal recognition and even VR gloves... It was obviously an experience where I learned a great amount of new skill. But it also helped me to know what computing technologies I was intersted in, and that would be video game development.</div> 
+        <br/>
         <b>Made with:</b> Unity3D, C#, HTC Vive, Microsoft Hololens"
         />
       <SkillProject 
         class="project"
         :imgPath="getValleyResistanceImg()"
         title="Valley Resistance"
-        text="On my final engineer degree project, we decided to build a Virtual Reality game. This was a proof of concept of a game mixing real time strategy to tower defence. The player is looking down a board and can place building and create units. The game would then launch waves of ennemy to invade the &quot;valley&quot; and by killing waves the player could earn more money and therefore more power.
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>On my final engineer degree project, we decided to build a Virtual Reality game. This was a proof of concept of a game mixing real time strategy to tower defence. The player is looking down a board and can place building and create units. The game would then launch waves of ennemy to invade the &quot;valley&quot; and by killing waves the player could earn more money and therefore more power.</div>
+        <br/>
         <b>Made with:</b> Unity, Maya, Oculus Rift"
         />
       <SkillProject 
         class="project"
         :imgPath="getKinectImg()"
         title="Kinect mini-game"
-        text="My first ever project related to video games! It was a simple game using Microsoft's Kinect. The goal was to &quot;slash&quot; with your hand the stressed syllable in english words.
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>My first ever project related to video games! It was a simple game using Microsoft's Kinect. The goal was to &quot;slash&quot; with your hand the stressed syllable in english words.</div>
+        <br/>
         <b>Made with:</b> Java, Processing, Kinect"
         />
     </div>
