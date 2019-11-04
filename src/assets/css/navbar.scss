@@ -16,3 +16,7 @@
 .navbar-link-img {
     max-height: 34px;
 }
+
+button:focus{
+    outline: 0px auto -webkit-focus-ring-color !important;
+}

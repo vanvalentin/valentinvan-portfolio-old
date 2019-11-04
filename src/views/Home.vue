@@ -3,31 +3,32 @@
 </style>
 
 <template>
+<div>
   <div class="container-fluid">
     <Presentation
       ref="Presentation"/>
     <div id="skill-categories">
       <div class="row">
         <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-3 col-xl-3">
-          <router-link to="/coding">
-            <CategoryBanner
-              :bannerImgPath="getCodingBannerUrl()"
-            />
-          </router-link>
-        </div>
-        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4 offset-xl-0 col-xl-3">
           <router-link to="/game">
             <CategoryBanner
               :bannerImgPath="getGameBannerUrl()"
             />
           </router-link>
         </div>
-      </div>
-      <div class="row">
-        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-3 col-xl-3">
+        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4 offset-xl-0 col-xl-3">
           <router-link to="/web">
             <CategoryBanner
               :bannerImgPath="getWebBannerUrl()"
+            />
+          </router-link>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-3 col-xl-3">
+          <router-link to="/coding">
+            <CategoryBanner
+              :bannerImgPath="getCodingBannerUrl()"
             />
           </router-link>
         </div>
@@ -52,17 +53,21 @@
       </div>
     </div>
   </div>
+  <Footer />
+</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Presentation from "@/components/Presentation.vue";
 import CategoryBanner from "@/components/CategoryBanner.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Presentation,
     CategoryBanner,
+    Footer
   },
 })
 export default class Home extends Vue {

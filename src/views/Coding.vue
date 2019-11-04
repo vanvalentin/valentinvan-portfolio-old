@@ -39,6 +39,7 @@
         />
     </div>
   </div>
+  <Footer />
 </div>
 </template>
 
@@ -46,11 +47,13 @@
 import { Component, Vue } from "vue-property-decorator";
 import Navbar from "@/components/Navbar.vue";
 import SkillProject from "@/components/SkillProject.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Navbar,
     SkillProject,
+    Footer
   },
 })
 export default class Coding extends Vue {
