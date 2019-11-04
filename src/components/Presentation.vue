@@ -5,7 +5,7 @@
 
 <template>
 <div id="header" class="row">
-  <div class="offset-md-3 col-md-6">
+  <div class="offset-md-3 col-md-6 offset-xl-4 col-xl-4">
     <img ref="" class="" src="../assets/header.png"/>
   </div>
 </div>

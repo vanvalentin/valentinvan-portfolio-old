@@ -8,14 +8,14 @@
       ref="Presentation"/>
     <div id="skill-categories">
       <div class="row">
-        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-3 col-xl-3">
           <router-link to="/coding">
             <CategoryBanner
               :bannerImgPath="getCodingBannerUrl()"
             />
           </router-link>
         </div>
-        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
+        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4 offset-xl-0 col-xl-3">
           <router-link to="/game">
             <CategoryBanner
               :bannerImgPath="getGameBannerUrl()"
@@ -24,14 +24,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-3 col-xl-3">
           <router-link to="/web">
             <CategoryBanner
               :bannerImgPath="getWebBannerUrl()"
             />
           </router-link>
         </div>
-        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4">
+        <div class="offset-1 col-10 offset-md-0 col-md-5 offset-lg-0 col-lg-4 offset-xl-0 col-xl-3">
           <router-link to="/sql">
             <CategoryBanner
               :bannerImgPath="getSqlBannerUrl()"
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+        <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4 offset-xl-4 col-xl-4">
           <router-link to="/graphic">
             <CategoryBanner
               :bannerImgPath="getGraphicBannerUrl()"
