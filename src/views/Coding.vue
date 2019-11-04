@@ -17,24 +17,24 @@
         class="project"
         :imgPath="getRestApiImg()"
         title="REST API"
-        text="During one year I have worked as a Full Stack Developer at Société Générale Hong Kong, the centre of operations for Asia Pacific region of one of the main french banks. Aside from building front-end web components used by finance team, I was also building API retrieving data and automating different type of calculation. 
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>During one year I have worked as a Full Stack Developer at Société Générale Hong Kong, the centre of operations for Asia Pacific region of one of the main french banks. Aside from building front-end web components used by finance team, I was also building API retrieving data and automating different type of calculation.</div>
+        <br/>
         <b>Made with:</b> .NET Core"
         />
       <SkillProject 
         class="project"
         :imgPath="getFaceswapImg()"
         title="Faceswap"
-        text="A project of a couple of months during my exchange study in Czech Replublic. I was commitionned to create a piece of software that would morph two faces into one. It was a pretty challenging and intersting project where I learned about Python, machine learning and visual computing.
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>A project of a couple of months during my exchange study in Czech Replublic. I was commitionned to create a piece of software that would morph two faces into one. It was a pretty challenging and intersting project where I learned about Python, machine learning and visual computing.</div>
+        <br/>
         <b>Made with:</b> Python"
         />
       <SkillProject 
         class="project"
         :imgPath="getBluetoothRemoteImg()"
         title="Bluetooth remote App"
-        text="As an apprentice in Nexter Training, a virtual reality training provider, I create an Android App. This app purpose is to allow a presenter of a Virtual Reality presentation to control the environement and timing of the presentation that is shown to a potential client. The app communicates through bluetooth to the VR module ran on a computer and created through Unity.
-        <br/><br/>
+        text="<div class=&quot;indented-p&quot;>As an apprentice in Nexter Training, a virtual reality training provider, I create an Android App. This app purpose is to allow a presenter of a Virtual Reality presentation to control the environement and timing of the presentation that is shown to a potential client. The app communicates through bluetooth to the VR module ran on a computer and created through Unity.</div>
+        <br/>
         <b>Made with:</b> Java, Android Studio, Unity3D"
         />
     </div>
@@ -64,7 +64,7 @@ export default class Coding extends Vue {
   }
 
   private getBluetoothRemoteImg(): string {
-    return require("../assets/img/web/illu_portfolio.png");
+    return require("../assets/img/coding/illu_bluetooth_remote.png");
   }
 }
 </script>

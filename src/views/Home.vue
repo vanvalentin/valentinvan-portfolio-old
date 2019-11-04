@@ -41,11 +41,13 @@
       </div>
       <div class="row">
         <div class="offset-1 col-10 offset-md-3 col-md-6 offset-lg-4 col-lg-4 offset-xl-4 col-xl-4">
-          <router-link to="/graphic">
-            <CategoryBanner
-              :bannerImgPath="getGraphicBannerUrl()"
-            />
-          </router-link>
+          <div class="offset-xl-1 col-xl-10 margin-centered-col">
+            <router-link to="/graphic">
+              <CategoryBanner
+                :bannerImgPath="getGraphicBannerUrl()"
+              />
+            </router-link>
+          </div>
         </div>
       </div>
     </div>

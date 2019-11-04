@@ -30,8 +30,13 @@ body{
     width:100%;
 }
 
+@media (max-width: 768px){
+    .description-title {
+        margin-top:10px;
+    }
+}
+
 .description-title {
-    margin-top:10px;
     color:white;
     text-transform: uppercase;
     text-align: left;
@@ -41,7 +46,6 @@ body{
 .description-text {
     color:white;
     text-align: justify;
-    text-indent: 20px && each-line;
     font-family: "gil", "Avenir", Helvetica, Arial, sans-serif;
 }
 
@@ -49,4 +53,8 @@ body{
     .project {
         margin-bottom: 50px;
     }
+}
+
+.indented-p {
+    text-indent: 1.2rem;
 }
