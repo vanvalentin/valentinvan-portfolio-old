@@ -1,5 +1,6 @@
 body{
-    margin:0 0;
+    margin-bottom:55px;
+    margin:0;
     background-image: url('../assets/background.png');
     background-size: cover;
     width:100%;
@@ -13,7 +14,7 @@ body{
     } 
 }
 
-@media (max-width: 992px) { 
+@media (min-width: 768px) { 
     .margin-centered-col {
         padding-left:15px !important;
         padding-right:15px !important;

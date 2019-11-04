@@ -15,12 +15,13 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 @Component
 export default class CategoryBanner extends Vue {
 
-  public static lastDelay: number = 1;
+  public static lastDelay: number;
   @Prop()
   public bannerImgPath!: string;
 
   constructor() {
     super();
+    CategoryBanner.lastDelay = 0.1;
   }
 
   public mounted() {
@@ -41,8 +42,8 @@ export default class CategoryBanner extends Vue {
 }
 
 function genRand(min: number, max: number, decimalPlaces: number) {
-    let rand = Math.random() * (max - min) + min;
-    let power = Math.pow(10, decimalPlaces);
+    const rand = Math.random() * (max - min) + min;
+    const power = Math.pow(10, decimalPlaces);
     return Math.floor(rand * power) / power;
 }
 </script>

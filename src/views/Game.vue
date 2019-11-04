@@ -24,9 +24,9 @@
         />
       <SkillProject 
         class="project"
-        :imgPath="getValleyResistanceImg()"
-        title="Valley Resistance"
-        text="<div class=&quot;indented-p&quot;>On my final engineer degree project, we decided to build a Virtual Reality game. This was a proof of concept of a game mixing real time strategy to tower defence. The player is looking down a board and can place building and create units. The game would then launch waves of ennemy to invade the &quot;valley&quot; and by killing waves the player could earn more money and therefore more power.</div>
+        :imgPath="getGuardianOfTheWallImg()"
+        title="Guardian of the wall"
+        text="<div class=&quot;indented-p&quot;>On my final engineer degree project, we decided to build a Virtual Reality game. This was a proof of concept of a game mixing real time strategy to tower defence. The player is looking down a board and can place building and create units. The game would then launch waves of ennemies to invade the castle and by killing waves the player could earn more money and therefore more power.</div>
         <br/>
         <b>Made with:</b> Unity, Maya, Oculus Rift"
         />
@@ -40,6 +40,7 @@
         />
     </div>
   </div>
+  <Footer />
 </div>
 </template>
 
@@ -47,25 +48,27 @@
 import { Component, Vue } from "vue-property-decorator";
 import Navbar from "@/components/Navbar.vue";
 import SkillProject from "@/components/SkillProject.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Navbar,
     SkillProject,
+    Footer,
   },
 })
 export default class Game extends Vue {
 
   private getVrArTrainingImg(): string {
-    return require("../assets/img/web/illu_portfolio.png");
+    return require("../assets/img/game/illu_vr_ar.png");
   }
 
-  private getValleyResistanceImg(): string {
-    return require("../assets/img/web/illu_portfolio.png");
+  private getGuardianOfTheWallImg(): string {
+    return require("../assets/img/game/illu_guardian_of_the_wall.png");
   }
 
   private getKinectImg(): string {
-    return require("../assets/img/web/illu_portfolio.png");
+    return require("../assets/img/game/illu_kinect.png");
   }
 }
 </script>
