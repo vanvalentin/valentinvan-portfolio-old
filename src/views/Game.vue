@@ -17,7 +17,7 @@
         class="project"
         :imgPath="getVrArTrainingImg()"
         title="VR/AR Training"
-        text="During my apprenticeship of 3 years at Nexter Training, I have helped built virtual and augmented reality training for various fields. I first started my experience helping build and maintain their scenario tool. The tool was an add-on to the game engine Unity3D. It will help people with no coding skills build various type of scenario for their trainings and link them to 3D elements in Unity.<br/>
+        text="During my apprenticeship of 3 years at Nexter Training, I have helped built virtual and augmented reality training for various fields. I first started my experience helping build and maintain their scenario tool. The tool was an add-on to the game engine Unity3D. It will help people with no coding skills build various type of scenario for their trainings and link them to 3D elements in Unity.<br/><br/>
 With the release of the VR headset HTC Vive during my first year I helped build their first VR training with the headset. We would then continue on to build many other training modules, using wireless headsets, vocal recognition and even VR gloves... It was obviously an experience where I learned a great amount of new skill. But it also helped me to know what computing technologies I was intersted in, and that would be video game development. 
         <br/><br/>
         <b>Made with:</b> Unity3D, C#, HTC Vive, Microsoft Hololens"
