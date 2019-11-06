@@ -4,7 +4,7 @@
 
 <template>
 <div>
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-bottom:30px">
     <Presentation
       ref="Presentation"/>
     <div id="skill-categories">

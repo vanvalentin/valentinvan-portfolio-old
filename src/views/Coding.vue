@@ -25,7 +25,7 @@
         class="project"
         :imgPath="getFaceswapImg()"
         title="Faceswap"
-        text="<div class=&quot;indented-p&quot;>A project of a couple of months during my exchange study in Czech Replublic. I was commitionned to create a piece of software that would morph two faces into one. It was a pretty challenging and intersting project where I learned about Python, machine learning and visual computing.</div>
+        text="<div class=&quot;indented-p&quot;>A project of a couple of months during my exchange study in Czech Replublic. I was commissioned to create a piece of software that would morph two faces into one. It was a pretty challenging and interesting project where I learned about Python, machine learning and visual computing.</div>
         <br/>
         <b>Made with:</b> Python"
         />
