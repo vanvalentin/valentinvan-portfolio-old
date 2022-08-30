@@ -1,29 +1,6 @@
-# valentinvan-portfolio
+# My Old Portfolio
 
-## Project setup
-```
-npm install
-```
+This is my previous portfolio made with Vue.js, you can still find a live version here: -
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+And to find my current portfolio, follow this link: https://valentinvan.com
